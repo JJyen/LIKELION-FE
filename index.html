@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>집순이 집돌이 테스트</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<!-- start -->
+<body id="container">
+    <div class="cont title-container">
+        <h1>집순이 & 집돌이 테스트</h1>
+        <img src="./img/p1.jpg" class="img">
+        <button id="startBtn"><strong>테스트 시작!</strong></button>
+    </div>
+
+    <!--question -->
+    <div class="cont question-container">
+            <h2 id="q-number" style="margin-top: 20%;">n번</h2>
+            <p id="question" >???</p>
+            <p id="type">yn</p>
+            <button id="a" class="answer-btn">1</button>
+            <button id="b" class="answer-btn">2</button>
+         <div class="progress mt-5">
+            <div class="progress-bar" role="progressbar" style="width: calc(100/12*1%)"></div>
+        </div>
+    </div>
+    <div class="cont result-container">
+        <h2>~당신은~</h2>
+        <h1 id="character">유형</h1>
+        <img id="resultImg" class="img" src="" alt="">
+        <p id="explain">설명</p>
+    </div>
+
+    <!-- result -->
+    <div class="score-container">
+        <input id="yn" type="text" class="input" value="0">
+    </div>
+    
+   <script type="text/javascript" src="./js/script.js"></script>
+</body>
+</html>

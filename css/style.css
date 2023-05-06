@@ -11,7 +11,7 @@
 
 body{
     height: 100vh;
-    display: flex; /*cont 조절*/
+    display: flex;
     justify-content: center;
     align-items: center;
     background-color: floralwhite;
@@ -20,7 +20,7 @@ body{
 .cont{
     height: 600px;
     width: 650px;
-    text-align: center; /*자식요소(?) 중앙정렬*/
+    text-align: center;
 }
 
 .img{

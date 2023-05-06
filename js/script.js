@@ -17,8 +17,8 @@ const q = {
     1: {
         "qNumber": "01",
         "question":"12시간 이상 누워있을 수 있다.",
-        "type": "yn", //내가 보는 거
-        "A": "그렇다", //사용자가 보는 거
+        "type": "yn", 
+        "A": "그렇다", 
         "B": "아니다"
     },
     2: {"qNumber": "02","question":"나가는 것 자체가 스케줄이다.", "type": "yn", "A": "그렇다", "B": "아니다"},
@@ -62,8 +62,8 @@ titleBtn.addEventListener('click',()=>{
 
 aBtn.addEventListener('click',()=>{
     if(type.innerHTML==="yn"){
-        let y=parseInt(YN.value); //문자열인자 정수로 반환
-        YN.setAttribute('value',y+1); //속성추가(?)
+        let y=parseInt(YN.value); 
+        YN.setAttribute('value',y+1); 
     }
 
     updateQuestion()

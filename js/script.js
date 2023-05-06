@@ -11,7 +11,7 @@ const pro = document.querySelector('.progress-bar');
 const CHAR = document.querySelector('#character');
 const explain = document.querySelector('#explain');
 const image = document.querySelector('#resultImg');
-const resultContainer = document.querySelector('.result-container');
+const resultContainer = document.querySelector('.result-container'); 
 
 const q = {
     1: {

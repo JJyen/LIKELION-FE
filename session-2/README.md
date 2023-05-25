@@ -1,6 +1,6 @@
 # TODoList
 
-##<코드리뷰>
+## <코드리뷰>
 1. 안 쓰는 코드 정리해서 코드 가독성 높이기
 2. filter(): 주어진 조건식을 만족하는 모든 요소를 모아 새 배열로 반환하는 함수
 ex) 할 일 리스트 삭제하기: getAllTodos().filter(todo => todo.id !==todoId)

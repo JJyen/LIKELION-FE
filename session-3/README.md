@@ -23,3 +23,34 @@ export default  function component() {
 } 
 // 1번을 2번처럼 줄여서 사용할 수 있다.
 ```
+
+### 3.map()
+```javascript
+const lis =[]
+   for(let i=0; i<props._topics.length; i++){
+           let t = props._topics[i]; //배열 형성
+           lis.push(<li key={t.id}>
+             <a id={t.id} href={'/read/'+t.id} onClick={(e)=>{
+               e.preventDefault();
+               props.onChangeMode(Number(e.target.id));
+             }}>{t.title}</a>
+             </li>)
+     }
+```
+
+```javascript
+ const lis = props._topics.map((t) => (
+    <li key={t.id}>
+      <a
+        id={t.id}
+        href={'/read/' + t.id}
+        onClick={(e) => {
+          e.preventDefault();
+          props.onChangeMode(Number(e.target.id));
+        }}
+      >
+        {t.title}
+      </a>
+    </li>
+  ));
+```

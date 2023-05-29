@@ -32,9 +32,12 @@ const lis =[]
    for(let i=0; i<props._topics.length; i++){
            let t = props._topics[i]; 
            lis.push(<li key={t.id}>
-             <a id={t.id} href={'/read/'+t.id} onClick={(e)=>{
-               e.preventDefault();
-               props.onChangeMode(Number(e.target.id));
+             <a 
+               id={t.id} 
+               href={'/read/'+t.id}
+               onClick={(e)=>{
+                 e.preventDefault();
+                 props.onChangeMode(Number(e.target.id));
              }}>{t.title}</a>
              </li>)
      }
@@ -50,10 +53,7 @@ const lis =[]
         onClick={(e) => {
           e.preventDefault();
           props.onChangeMode(Number(e.target.id));
-        }}
-      >
-        {t.title}
-      </a>
+        }}>{t.title}</a>
     </li>
   ));
 ```

@@ -10,7 +10,7 @@ switch문:
 조건이 많을 때는 if문보다 switch문을 쓰는 것이 좋다.
 
 ### 2. export default
-```
+```javascript
 //1번
 function component() {
  ...

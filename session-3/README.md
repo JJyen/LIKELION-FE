@@ -16,7 +16,8 @@ function component() {
  ...
 }
 export default component
-
+```
+```javascript
 //2번
 export default  function component() {
  ...

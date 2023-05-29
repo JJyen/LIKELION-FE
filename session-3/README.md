@@ -22,3 +22,4 @@ export default  function component() {
  ...
 } 
 // 1번을 2번처럼 줄여서 사용할 수 있다.
+```
